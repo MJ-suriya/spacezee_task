@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  /* General Navbar Styling */
+.navbar {
+font-family: 'Arial', sans-serif;
+font-size: 1rem;
+}
+
+/* Brand Styling */
+.navbar-brand {
+font-size: 1.5rem;
+font-family: 'Lobster', cursive;
+}
+
+/* Centered Navigation Links */
+.navbar-nav.mx-auto {
+text-align: center;
+}
+
+.nav-link {
+padding: 0 15px;
+font-size: 1rem;
+color: #000;
+transition: color 0.3s, border-bottom 0.3s;
+}
+
+
+/* Social Media Icons Styling */
+.navbar-nav.ms-auto .nav-item .bx {
+font-size: 1.25rem;
+transition: transform 0.3s;
+}
+
+.navbar-nav.ms-auto .nav-item .bx:hover {
+transform: scale(1.2);
+}
+
+.navbar-nav.ms-auto .nav-item:not(:last-child) {
+margin-right: 10px; /* Add spacing between social media icons */
+}
+
+h5{
+    font-weight: bolder;
+    color:#0c0c0c;
+}
+span{
+    font-weight: bolder;
+    color:#0c0c0c;
+}
+.subscribe-section {
+    /* background-color: #e7faff; */
+    /* padding: 30px 15px; */
+    text-align: center;
+  }
+  /* .subscribe-section .subscribe-part{
+      background-color: #ccf5fe;
+  } */
+  .subscribe-section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  footer {
+background-color: #f8f9fa; /* Light background color */
+font-family: "Inter", sans-serif;
+}
+
+footer h2 {
+font-family: "Lobster", cursive;
+font-size: 24px;
+color: #000;
+}
+
+footer .text-primary {
+color: #ff7426 !important;
+}
+
+footer a {
+color: #000;
+transition: color 0.3s;
+}
+
+footer a:hover {
+color: #ff7426;
+}
+
+.subscribe-section .subscribe-part {
+  background-color: #e7f9fd;
+  position: relative;
+  overflow: hidden; /* Prevents any overflow from the image */
+}
+
+.imgs-fluid {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.subscribe-section .imgs-fluid:last-child {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: auto; /* Ensure image retains proportions */
+  width: auto;  /* Adjust width if necessary */
+  max-width: 100%; /* Prevents image from exceeding container width */
+  max-height: 100%; /* Prevents image from exceeding container height */
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodieland Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+   .pagination .page-item .page-link {
+  color: #000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  margin: 0 5px; /* Ensure there's spacing between items */
+}
+
+.pagination .page-item .page-link:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.pagination {
+  display: flex; /* Ensure flex layout */
+  justify-content: center; /* Center pagination */
+  padding-left: 0; /* Reset padding if any */
+  list-style: none; /* Remove default list styling */
+}
+
+.pagination .page-item {
+  display: inline-block;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3">
+    <div class="container">
+      <!-- Brand Name -->
+      <a class="navbar-brand fw-bold text-dark" href="#">Foodieland</a>
+      
+      <!-- Toggle Button for Mobile View -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Centered Navigation Links -->
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="receipe_details.html">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="blogpost.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">About us</a>
+          </li>
+        </ul>
+  
+        <!-- Right-Aligned Social Media Icons -->
+        <ul class="navbar-nav  d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><i class="bx bxl-facebook fs-5"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><i class="bx bxl-twitter fs-5"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><i class="bx bxl-instagram fs-5"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="py-5 text-center">
+    <div class="container">
+      <h1 style="font-weight: bolder;"class="display-4">Blog & Article</h1>
+      
+      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <br>
+      <div class="input-group mt-1 w-50 mx-auto">
+        <input type="text" class="form-control p-3" placeholder="Search article, news, or recipe...">
+        <button class="btn btn-dark">Search</button>
+      </div>
+    </div>
+  </header>
+
+ <!-- Blog Articles Section -->
+<section class="container my-5">
+    <div class="row">
+      <!-- Articles List -->
+      <div class="col-lg-8">
+        <!-- Blog Article 1 -->
+        <div class="d-flex mb-4 border-bottom pb-3">
+          <img src="assets/img12.png" class="img-fluid rounded me-3" alt="Blog Image" style="width: 150px; height: 150px; object-fit: cover;">
+          <div>
+            <h5>Crochet Projects for Noodle Lovers</h5>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <small class="text-muted">
+                <img src="assets/p1.png" class="img-fluid rounded-circle me-2" alt="Author Image" style="width: 25px; height: 25px; object-fit: cover;"> <span>By Wade Warren </span>| 12 November 2021</small>
+          </div>
+        </div>
+  
+        <!-- Blog Article 2 -->
+        <div class="d-flex mb-4 border-bottom pb-3">
+          <img src="assets/img5.png" class="img-fluid rounded me-3" alt="Blog Image" style="width: 150px; height: 150px; object-fit: cover;">
+          <div>
+            <h5>10 Vegetarian Recipes To Eat This Month</h5>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <small class="text-muted">
+                <img src="assets/p2.png" class="img-fluid rounded-circle me-2" alt="Author Image" style="width: 25px; height: 25px; object-fit: cover;"><span>By Robert Fox</span> | 12 November 2021</small>
+          </div>
+        </div>
+  
+        <!-- Blog Article 3 -->
+        <div class="d-flex mb-4 border-bottom pb-3">
+          <img src="assets/img7.png" class="img-fluid rounded me-3" alt="Blog Image" style="width: 150px; height: 150px; object-fit: cover;">
+          <div>
+            <h5>Full Guide to Becoming a Professional Chef</h5>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <small class="text-muted">
+                <img src="assets/p3.png" class="img-fluid rounded-circle me-2" alt="Author Image" style="width: 25px; height: 25px; object-fit: cover;"><span>By Dianne Russell</span> | 12 November 2021</small>
+          </div>
+        </div>
+  
+        <!-- Blog Article 4 -->
+        <div class="d-flex mb-4 border-bottom pb-3">
+          <img src="assets/img9.png" class="img-fluid rounded me-3" alt="Blog Image" style="width: 150px; height: 150px; object-fit: cover;">
+          <div>
+            <h5>Simple & Delicious Vegetarian Lasagna</h5>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <small class="text-muted">
+                <img src="assets/p4.png" class="img-fluid rounded-circle me-2" alt="Author Image" style="width: 25px; height: 25px; object-fit: cover;"><span>By Leslie Alexander</span> | 12 November 2021</small>
+          </div>
+        </div>
+  
+        <!-- Blog Article 5 -->
+        <div class="d-flex mb-4 border-bottom pb-3">
+          <img src="assets/img10.png" class="img-fluid rounded me-3" alt="Blog Image" style="width: 150px; height: 150px; object-fit: cover;">
+          <div>
+            <h5>Plantain and Pinto Stew with Aji Verde</h5>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <small class="text-muted">
+                <img src="assets/p5.png" class="img-fluid rounded-circle me-2" alt="Author Image" style="width: 25px; height: 25px; object-fit: cover;"><span>By Courtney Henry</span> | 12 November 2021</small>
+          </div>
+        </div>
+  
+        <!-- Blog Article 6 -->
+        <div class="d-flex mb-4 border-bottom pb-3">
+          <img src="assets/img11.png" class="img-fluid rounded me-3" alt="Blog Image" style="width: 150px; height: 150px; object-fit: cover;">
+          <div>
+            <h5>We’re Hiring a Communications Assistant!</h5>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <small class="text-muted">
+                <img src="assets/p6.png" class="img-fluid rounded-circle me-2" alt="Author Image" style="width: 25px; height: 25px; object-fit: cover;"><span>By Albert Flores</span>| 12 November 2021</small>
+          </div>
+        </div>
+  
+        <!-- Pagination -->
+        <div class="d-flex justify-content-center mx-auto mt-4">
+            <nav aria-label="Page navigation justify-content-center">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">...</a></li>
+              </ul>
+            </nav>
+          </div>
+          
+          
+      </div>
+  
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+        <!-- Sidebar Heading -->
+        <h5 class="mb-4">Tasty Recipes</h5>
+        
+        <!-- Recipe Items with Image -->
+        <div class="d-flex align-items-center mb-3">
+          <img src="assets/img13.png" alt="Chicken Meatballs" class="rounded me-3" style="width: 80px; height: 70px; object-fit: cover;">
+          <div>
+            <p class="mb-1"><strong>Chicken Meatballs with Cream Cheese</strong></p>
+            <small class="text-muted">By Andreas Paula</small>
+          </div>
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <img src="assets/img14.png" alt="Traditional Bolognese Ragu" class="rounded me-3" style="width: 80px; height: 70px; object-fit: cover;">
+          <div>
+            <p class="mb-1"><strong>Traditional Bolognese Ragu</strong></p>
+            <small class="text-muted">By Andreas Paula</small>
+          </div>
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <img src="assets/img15.png" alt="Chinese Dumplings" class="rounded me-3" style="width: 80px; height: 70px; object-fit: cover;">
+          <div>
+            <p class="mb-1"><strong>Pork and Chive Chinese Dumplings</strong></p>
+            <small class="text-muted">By Andreas Paula</small>
+          </div>
+        </div>
+      
+        <!-- Sidebar Image Section -->
+        <div class="mt-5 p-4 bg-light text-center rounded">
+          <p class="fw-bold">Don't forget to eat healthy food</p>
+          <img src="assets/imgbl.png" class="img-fluid rounded" alt="Healthy Food" style="max-width: 100%; height: auto;">
+        </div>
+      </div>
+      
+
+    </div>
+  </section>
+  
+  <!-- Subscribe Section -->
+  <section class="subscribe-section my-5">
+    <div class="container">
+      <div class="row align-items-center subscribe-part rounded-4 shadow ">
+        <!-- Left Image -->
+        <div class="col-md-3 imgs-fluid">
+          <img src="assets/img2.png" alt="Left Decorative Image" class="img-fluid">
+        </div>
+  
+        <!-- Text and Input Section -->
+        <div class="col-md-6 text-center">
+          <h2 class="fw-bold">Deliciousness to your inbox</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="d-flex justify-content-center">
+            <input type="email" class="form-control w-75 me-2" placeholder="Your email address">
+            <button class="btn btn-dark px-4">Subscribe</button>
+          </div>
+        </div>
+  
+        <!-- Right Image -->
+        <div class="col-md-3 imgs-fluid">
+          <img src="assets/img20.png" alt="Right Decorative Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Brand and Description -->
+        <div class="col-md-4">
+          <h2 class="fw-bold">
+            Foodieland<span class="text-primary">.</span>
+          </h2>
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="col-md-4 ms-auto">
+          <ul class="list-unstyled d-flex justify-content-center mb-3">
+            <li class="mx-3">
+              <a href="receipe_details.html" class="text-dark text-decoration-none">Recipes</a>
+            </li>
+            <li class="mx-3">
+              <a href="blogpost.html" class="text-dark text-decoration-none">Blog</a>
+            </li>
+            <li class="mx-3">
+              <a href="contact.html" class="text-dark text-decoration-none">Contact</a>
+            </li>
+            <li class="mx-3">
+              <a href="#" class="text-dark text-decoration-none">About Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media Links -->
+       
+      </div>
+      <hr />
+      <div class="row align-items-center">
+        <!-- "Powered by" Text -->
+        <div class="col-md-11 d-flex justify-content-center">
+          <p class="text-muted mb-0 text-center">
+            © 2020 Flowbase. Powered by <span class="text-primary">Webflow</span>
+          </p>
+        </div>
+      
+        <!-- Social Media Icons -->
+        <div class="col-md-1">
+          <div class="d-flex justify-content-end">
+            <a class="nav-link text-dark p-0 mx-2" href="#"><i class="bx bxl-facebook fs-5"></i></a>
+            <a class="nav-link text-dark p-0 mx-2" href="#"><i class="bx bxl-twitter fs-5"></i></a>
+            <a class="nav-link text-dark p-0 mx-2" href="#"><i class="bx bxl-instagram fs-5"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

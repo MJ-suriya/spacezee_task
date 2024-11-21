@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot Recipe Section</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+     <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3">
+    <div class="container">
+      <!-- Brand Name -->
+      <a class="navbar-brand fw-bold text-dark" href="#">Foodieland</a>
+      
+      <!-- Toggle Button for Mobile View -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Centered Navigation Links -->
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active fw-bold text-dark" href="homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="receipe_details.html">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="blogpost.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">About us</a>
+          </li>
+        </ul>
+  
+        <!-- Right-Aligned Social Media Icons -->
+        <ul class="navbar-nav  d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><i class="bx bxl-facebook fs-5"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><i class="bx bxl-twitter fs-5"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><i class="bx bxl-instagram fs-5"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <section class="hot-recipe-section">
+        <div class="container hot-recipe">
+          <div class="row align-items-center position-relative">
+            <!-- Left Content -->
+            <div class="col-md-6">
+              <div class="hot-recipe-content">
+                <span class="badge bg-light text-dark">Hot Recipes</span>
+                <h1>Spicy delicious chicken wings</h1>
+                <p>Learn how to make delicious, crispy chicken wings that are perfect for any occasion. Serve with your favorite sauce or enjoy them plain.</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <i class="bx bx-time"></i> 30 Minutes
+                  </li>
+                  <li class="list-inline-item">
+                    <i class="bx bx-user"></i> Medium
+                  </li>
+                </ul>
+                <div class="author">
+                  <p>
+                    <i class="bx bx-user-circle"></i> Julia Krents • November 2023
+                  </p>
+                  <a href="#" class="btn btn-dark">View Recipe</a>
+                </div>
+              </div>
+            </div>
+            <!-- Right Content -->
+            <div class="col-md-6 position-relative">
+              <div class="image-wrapper">
+                <img src="assets/h1.png" alt="Spicy Chicken Wings" class="img-fluid chicken-wings-img">
+              </div>
+            </div>
+            <!-- Center Logo -->
+            <img src="assets/h2.png" alt="Handpicked" class="handpicked-logo">
+          </div>
+        </div>
+      </section>
+      
+
+       <!-- Categories Section -->
+  <section class="categories-section py-2">
+    <div class="container text-center">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-0">Categories</h2>
+        <a href="#" class="view-all-btn btn btn-dark">View All Categories</a>
+      </div>
+      <div class="categories-wrapper d-flex justify-content-center flex-wrap">
+        <!-- Category Items -->
+        <div class="category-item text-center m-2">
+          <div class="icon-wrapper breakfast">
+            <img src="assets/f1.png" alt="Breakfast" class="img-fluid">
+          </div>
+          <p class="mt-2 text-center">Breakfast</p>
+        </div>
+        <div class="category-item text-center m-2">
+          <div class="icon-wrapper vegan">
+            <img src="assets/f7.png" alt="Vegan" class="img-fluid">
+          </div>
+          <p class="mt-2">Vegan</p>
+        </div>
+        <div class="category-item text-center m-2">
+          <div class="icon-wrapper meat">
+            <img src="assets/f3.png" alt="Meat" class="img-fluid">
+          </div>
+          <p class="mt-2">Meat</p>
+        </div>
+        <div class="category-item text-center m-2">
+          <div class="icon-wrapper dessert">
+            <img src="assets/f4.png" alt="Dessert" class="img-fluid">
+          </div>
+          <p class="mt- text-center">Dessert</p>
+        </div>
+        <div class="category-item text-center m-2">
+          <div class="icon-wrapper lunch">
+            <img src="assets/f5.png" alt="Lunch" class="img-fluid">
+          </div>
+          <p class="mt-2">Lunch</p>
+        </div>
+        <div class="category-item text-center m-2">
+          <div class="icon-wrapper chocolate">
+            <img src="assets/f6.png" alt="Chocolate" class="img-fluid">
+          </div>
+          <p class="mt-2">Chocolate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="simple-recipes-section">
+    <div class="container">
+      <!-- Section Title -->
+      <div class="section-header text-center mb-5">
+        <h2>Simple and Tasty Recipes</h2>
+        <p>Discover quick and easy recipes for every taste!</p>
+      </div>
+      
+      <!-- Recipe Cards Grid -->
+      <div class="row">
+        <!-- Recipe Card 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="recipe-card">
+            <img src="assets/s1.png" alt="Wagyu Beef Cheeseburger" class="recipe-img">
+            <div class="recipe-info">
+              <h5>Big and Juicy Wagyu Beef Cheeseburger</h5>
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="bx bx-time"></i> 30 min</li>
+                <li class="list-inline-item"><i class="bx bx-user"></i> Snack</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Recipe Card 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="recipe-card">
+            <img src="assets/s2.png" alt="Roasted Salmon" class="recipe-img">
+            <div class="recipe-info">
+              <h5>Fresh Lime Roasted Salmon with Ginger Sauce</h5>
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="bx bx-time"></i> 25 min</li>
+                <li class="list-inline-item"><i class="bx bx-user"></i> Fish</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Recipe Card 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="recipe-card">
+            <img src="assets/s3.png" alt="Pancakes with Honey Syrup" class="recipe-img">
+            <div class="recipe-info">
+              <h5>Strawberry Oatmeal Pancakes with Honey Syrup</h5>
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="bx bx-time"></i> 20 min</li>
+                <li class="list-inline-item"><i class="bx bx-user"></i> Breakfast</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="recipe-card">
+              <img src="assets/s4.png" alt="Pancakes with Honey Syrup" class="recipe-img">
+              <div class="recipe-info">
+                <h5>Fresh and Healthy Mixed Mayonnaise Salad</h5>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><i class="bx bx-time"></i> 20 min</li>
+                  <li class="list-inline-item"><i class="bx bx-user"></i> Healthy</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="recipe-card">
+              <img src="assets/img13.png" alt="Pancakes with Honey Syrup" class="recipe-img">
+              <div class="recipe-info">
+                <h5>Chicken Meatballs with Cream Cheese</h5>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><i class="bx bx-time"></i> 20 min</li>
+                  <li class="list-inline-item"><i class="bx bx-user"></i> Breakfast</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="recipe-card">
+              <img src="assets/s2.png" alt="Pancakes with Honey Syrup" class="recipe-img">
+              <div class="recipe-info">
+                <h5>Fresh Lime Roasted Salmon with Ginger Sauce</h5>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><i class="bx bx-time"></i> 20 min</li>
+                  <li class="list-inline-item"><i class="bx bx-user"></i> Fish</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="recipe-card">
+              <img src="assets/s7.png" alt="Pancakes with Honey Syrup" class="recipe-img">
+              <div class="recipe-info">
+                <h5>Fruity Pancake with Orange & Blueberry</h5>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><i class="bx bx-time"></i> 20 min</li>
+                  <li class="list-inline-item"><i class="bx bx-user"></i> Healthy</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="recipe-card">
+              <img src="assets/s8.png" alt="Pancakes with Honey Syrup" class="recipe-img">
+              <div class="recipe-info">
+                <h5>The Best Easy One Pot Chicken and Rice</h5>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><i class="bx bx-time"></i> 20 min</li>
+                  <li class="list-inline-item"><i class="bx bx-user"></i> Snack</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="recipe-card">
+              <img src="assets/img14.png" alt="Pancakes with Honey Syrup" class="recipe-img">
+              <div class="recipe-info">
+                <h5>The Creamiest Creamy Chicken and Bacon Pasta</h5>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><i class="bx bx-time"></i> 20 min</li>
+                  <li class="list-inline-item"><i class="bx bx-user"></i> Noodles</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chef-kitchen-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text Content -->
+        <div class="col-md-6">
+          <div class="chef-text">
+            <h2>Everyone can be a chef in their own kitchen</h2>
+            <p>
+              Learn how to create simple, unforgettable dishes with our advanced recipes and tips that make cooking easy and fun. 
+              From beginners to seasoned cooks, there's something for everyone!
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+        <!-- Image Content -->
+        <div class="col-md-6 text-center">
+          <img src="assets/chef1.png" alt="Chef" class="img-fluid chef-image">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="instagram-section">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header text-center mb-5">
+        <h2>Check out @foodieland on Instagram</h2>
+        <p>Learn more about new recipes, cooking tips, and exclusive content by following us on Instagram!</p>
+      </div>
+  
+      <!-- Instagram Posts Grid -->
+      <div class="row justify-content-center">
+        <!-- Instagram Post 1 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="insta-card">
+            <img src="assets/img3.png" alt="Instagram Post 1" class="img-fluid">
+            <div class="insta-stats">
+              <span><i class="bx bxs-heart"></i> 234</span>
+              <span><i class="bx bxs-message"></i> 45</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Instagram Post 2 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="insta-card">
+            <img src="assets/img4.png" alt="Instagram Post 2" class="img-fluid">
+            <div class="insta-stats">
+              <span><i class="bx bxs-heart"></i> 178</span>
+              <span><i class="bx bxs-message"></i> 20</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Instagram Post 3 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="insta-card">
+            <img src="assets/img5.png" alt="Instagram Post 3" class="img-fluid">
+            <div class="insta-stats">
+              <span><i class="bx bxs-heart"></i> 301</span>
+              <span><i class="bx bxs-message"></i> 55</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Instagram Post 4 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="insta-card">
+            <img src="assets/img6.png" alt="Instagram Post 4" class="img-fluid">
+            <div class="insta-stats">
+              <span><i class="bx bxs-heart"></i> 192</span>
+              <span><i class="bx bxs-message"></i> 35</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- View on Instagram Button -->
+      <div class="text-center mt-4">
+        <a href="https://www.instagram.com/foodieland" target="_blank" class="btn btn-dark">View on Instagram</a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="delicious-recipe-section">
+    <div class="container">
+        <div class="row align-items-center mb-5">
+            <!-- Heading (Left) -->
+            <div class="col-lg-6">
+              <h2 style="font-weight: bolder;" class="section-title">Try this delicious recipe to make your day</h2>
+            </div>
+            <!-- Description (Right) -->
+            <div class="col-lg-6">
+              <p class="section-description">
+                Discover mouth-watering recipes that are perfect for any occasion. These dishes are sure to impress and make your day extra special!
+              </p>
+            </div>
+          </div>
+      <div class="row">
+        <!-- Recipe Cards (First Row) -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="recipe-card">
+            <img src="assets/img5.png" alt="Recipe 1" class="img-fluid rounded">
+            <div class="recipe-content">
+              <h4>Mixed Tropical Fruit Salad</h4>
+              <ul class="recipe-info">
+                <li><i class="bx bx-time"></i> 15 mins</li>
+                <li><i class="bx bx-food-menu"></i> Easy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="recipe-card">
+            <img src="assets/img3.png" alt="Recipe 2" class="img-fluid rounded">
+            <div class="recipe-content">
+              <h4>Big and Juicy Wagyu Beef Cheeseburger</h4>
+              <ul class="recipe-info">
+                <li><i class="bx bx-time"></i> 30 mins</li>
+                <li><i class="bx bx-food-menu"></i> Medium</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="recipe-card">
+            <img src="assets/img6.png" alt="Recipe 3" class="img-fluid rounded">
+            <div class="recipe-content">
+              <h4>Healthy Asparagus Fried Rice</h4>
+              <ul class="recipe-info">
+                <li><i class="bx bx-time"></i> 25 mins</li>
+                <li><i class="bx bx-food-menu"></i> Easy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="recipe-card">
+            <img src="assets/img4.png" alt="Recipe 4" class="img-fluid rounded">
+            <div class="recipe-content">
+              <h4>Cauliflower Veggie Taco</h4>
+              <ul class="recipe-info">
+                <li><i class="bx bx-time"></i> 20 mins</li>
+                <li><i class="bx bx-food-menu"></i> Easy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Recipe 5 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="recipe-card">
+            <img src="assets/img16.png" alt="Recipe 5" class="img-fluid rounded">
+            <div class="recipe-content">
+              <h4>Garlic Butter Shrimp Pasta</h4>
+              <ul class="recipe-info">
+                <li><i class="bx bx-time"></i> 40 mins</li>
+                <li><i class="bx bx-food-menu"></i> Medium</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Recipe 6 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="recipe-card">
+            <img src="assets/img17.png" alt="Recipe 6" class="img-fluid rounded">
+            <div class="recipe-content">
+              <h4>Classic Margherita Pizza</h4>
+              <ul class="recipe-info">
+                <li><i class="bx bx-time"></i> 25 mins</li>
+                <li><i class="bx bx-food-menu"></i> Easy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Recipe 7 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="recipe-card">
+            <img src="assets/img18.png" alt="Recipe 7" class="img-fluid rounded">
+            <div class="recipe-content">
+              <h4>Spicy Thai Curry</h4>
+              <ul class="recipe-info">
+                <li><i class="bx bx-time"></i> 45 mins</li>
+                <li><i class="bx bx-food-menu"></i> Hard</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Recipe 8 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="recipe-card">
+            <img src="assets/img19.png" alt="Recipe 8" class="img-fluid rounded">
+            <div class="recipe-content">
+              <h4>Chocolate Lava Cake</h4>
+              <ul class="recipe-info">
+                <li><i class="bx bx-time"></i> 35 mins</li>
+                <li><i class="bx bx-food-menu"></i> Medium</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+    
+    <!-- Subscribe Section -->
+    <section class="subscribe-section my-5">
+        <div class="container">
+          <div class="row align-items-center subscribe-part rounded-4 shadow ">
+            <!-- Left Image -->
+            <div class="col-md-3 imgs-fluid">
+              <img src="assets/img2.png" alt="Left Decorative Image" class="img-fluid">
+            </div>
+      
+            <!-- Text and Input Section -->
+            <div class="col-md-6 text-center">
+              <h2 class="fw-bold">Deliciousness to your inbox</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="d-flex justify-content-center">
+                <input type="email" class="form-control w-75 me-2" placeholder="Your email address">
+                <button class="btn btn-dark px-4">Subscribe</button>
+              </div>
+            </div>
+      
+            <!-- Right Image -->
+            <div class="col-md-3 imgs-fluid ">
+              <img src="assets/img20.png" alt="Right Decorative Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+   <!-- Footer -->
+   <footer class="bg-light py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Brand and Description -->
+        <div class="col-md-4">
+          <h2 class="fw-bold">
+            Foodieland<span class="text-primary">.</span>
+          </h2>
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="col-md-4 ms-auto">
+          <ul class="list-unstyled d-flex justify-content-center mb-3">
+            <li class="mx-3">
+              <a href="receipe_details.html" class="text-dark text-decoration-none">Recipes</a>
+            </li>
+            <li class="mx-3">
+              <a href="blogpost.html" class="text-dark text-decoration-none">Blog</a>
+            </li>
+            <li class="mx-3">
+              <a href="contact.html" class="text-dark text-decoration-none">Contact</a>
+            </li>
+            <li class="mx-3">
+              <a href="#" class="text-dark text-decoration-none">About Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media Links -->
+       
+      </div>
+      <hr />
+      <div class="row align-items-center">
+        <!-- "Powered by" Text -->
+        <div class="col-md-11 d-flex justify-content-center">
+          <p class="text-muted mb-0 text-center">
+            © 2020 Flowbase. Powered by <span class="text-primary">Webflow</span>
+          </p>
+        </div>
+      
+        <!-- Social Media Icons -->
+        <div class="col-md-1">
+          <div class="d-flex justify-content-end">
+            <a class="nav-link text-dark p-0 mx-2" href="#"><i class="bx bxl-facebook fs-5"></i></a>
+            <a class="nav-link text-dark p-0 mx-2" href="#"><i class="bx bxl-twitter fs-5"></i></a>
+            <a class="nav-link text-dark p-0 mx-2" href="#"><i class="bx bxl-instagram fs-5"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+    </div>
+  </footer>
+
+</body>
+</html>

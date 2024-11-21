@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodieland Contact Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .contact-us-section {
+      padding: 50px 15px;
+    }
+    .contact-us-section img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .contact-us-section h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+   
+    .recipes-section {
+      padding: 50px 15px;
+    }
+    .recipe-card img {
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+      padding-bottom:10px;
+    }
+    .recipe-card h5 {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+   
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3">
+    <div class="container">
+      <!-- Brand Name -->
+      <a class="navbar-brand fw-bold text-dark" href="#">Foodieland</a>
+      
+      <!-- Toggle Button for Mobile View -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Centered Navigation Links -->
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="receipe_details.html">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="blogpost.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold text-dark" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">About us</a>
+          </li>
+        </ul>
+  
+        <!-- Right-Aligned Social Media Icons -->
+        <ul class="navbar-nav  d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><i class="bx bxl-facebook fs-5"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><i class="bx bxl-twitter fs-5"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><i class="bx bxl-instagram fs-5"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Contact Us Section -->
+  <section class="contact-us-section container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <img src="assets/chef.png" alt="Chef Image">
+      </div>
+      <div class="col-lg-6">
+        <h1>Contact us</h1>
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Your email address">
+            </div>
+          </div>
+          <div class="row g-3 mt-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Enter subject">
+            </div>
+            <div class="col-md-6">
+              <select class="form-select">
+                <option selected>Enquiry Type</option>
+                <option value="1">Advertising</option>
+                <option value="2">Partnership</option>
+                <option value="3">Feedback</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" rows="5" placeholder="Enter your messages"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark mt-3">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe Section -->
+  <section class="subscribe-section my-5">
+    <div class="container">
+      <div class="row align-items-center subscribe-part rounded-4 shadow ">
+        <!-- Left Image -->
+        <div class="col-md-3 imgs-fluid">
+          <img src="assets/img2.png" alt="Left Decorative Image" class="img-fluid">
+        </div>
+  
+        <!-- Text and Input Section -->
+        <div class="col-md-6 text-center">
+          <h2 class="fw-bold">Deliciousness to your inbox</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="d-flex justify-content-center">
+            <input type="email" class="form-control w-75 me-2" placeholder="Your email address">
+            <button class="btn btn-dark px-4">Subscribe</button>
+          </div>
+        </div>
+  
+        <!-- Right Image -->
+        <div class="col-md-3 imgs-fluid">
+          <img src="assets/img20.png" alt="Right Decorative Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- Recipes Section -->
+  <section class="recipes-section container">
+    <h2 class="text-center mb-4">Check out the delicious recipe</h2>
+    <div class="row g-4">
+      <div class="col-md-3 recipe-card">
+        <img src="assets/img3.png" alt="Recipe Image">
+        <h5>Mixed Tropical Fruit Salad with Superfood Boosts</h5>
+        <p>30 Minutes | Healthy</p>
+      </div>
+      <div class="col-md-3 recipe-card">
+        <img src="assets/img4.png" alt="Recipe Image">
+        <h5>Big and Juicy Wagyu Beef Cheeseburger</h5>
+        <p>30 Minutes | Western</p>
+      </div>
+      <div class="col-md-3 recipe-card">
+        <img src="assets/img5.png" alt="Recipe Image">
+        <h5>Healthy Japanese Fried Rice with Asparagus</h5>
+        <p>30 Minutes | Healthy</p>
+      </div>
+      <div class="col-md-3 recipe-card">
+        <img src="assets/img6.png" alt="Recipe Image">
+        <h5>Cauliflower Walnut Vegetarian Taco Meat</h5>
+        <p>30 Minutes | Eastern</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Brand and Description -->
+        <div class="col-md-4">
+          <h2 class="fw-bold">
+            Foodieland<span class="text-primary">.</span>
+          </h2>
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="col-md-4 ms-auto">
+          <ul class="list-unstyled d-flex justify-content-center mb-3">
+            <li class="mx-3">
+              <a href="receipe_details.html" class="text-dark text-decoration-none">Recipes</a>
+            </li>
+            <li class="mx-3">
+              <a href="blogpost.html" class="text-dark text-decoration-none">Blog</a>
+            </li>
+            <li class="mx-3">
+              <a href="contact.html" class="text-dark text-decoration-none">Contact</a>
+            </li>
+            <li class="mx-3">
+              <a href="#" class="text-dark text-decoration-none">About Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media Links -->
+       
+      </div>
+      <hr />
+      <div class="row align-items-center">
+        <!-- "Powered by" Text -->
+        <div class="col-md-11 d-flex justify-content-center">
+          <p class="text-muted mb-0 text-center">
+            © 2020 Flowbase. Powered by <span class="text-primary">Webflow</span>
+          </p>
+        </div>
+      
+        <!-- Social Media Icons -->
+        <div class="col-md-1">
+          <div class="d-flex justify-content-end">
+            <a class="nav-link text-dark p-0 mx-2" href="#"><i class="bx bxl-facebook fs-5"></i></a>
+            <a class="nav-link text-dark p-0 mx-2" href="#"><i class="bx bxl-twitter fs-5"></i></a>
+            <a class="nav-link text-dark p-0 mx-2" href="#"><i class="bx bxl-instagram fs-5"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
